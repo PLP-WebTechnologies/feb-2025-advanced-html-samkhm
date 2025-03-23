@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Assignment 2</title>
+</head>
+<body>
+    <!-- an ordered list -->
+    <ol type="i" start="1">
+        <li>Home</li>
+        <li>Services</li>
+        <li>About Us</li>
+        <li>Contact</li>
+    </ol>
+
+    <!-- image from pixels -->
+   <img src="https://images.pexels.com/photos/2377045/pexels-photo-2377045.jpeg?auto=compress&cs=tinysrgb&w=600" alt="This is an image" width="500px" height="400px">
+
+   <!-- table with user details -->
+   <table>
+    <caption>USER DATA</caption>
+         <thead>
+            <tr>
+                <th>Name</th>
+                <th>Adress</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td>Samuel</td>
+                <td>5676 Kiu</td>
+                <td>07635782323</td>
+                <td>samuel@gmail.com</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>50200 BG</td>
+                <td>076834271343</td>
+                <td>john87@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Zippo</td>
+                <td>9523 gr</td>
+                <td>01723963387</td>
+                <td>zippoj@gmail.com</td>
+            </tr>
+            <tr>
+                <td>kiko</td>
+                <td>2i2o42 huj</td>
+                <td>070987654</td>
+                <td>kikol@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Juday</td>
+                <td>729</td>
+                <td>076489324</td>
+                <td>judayd@gmail.com</td>
+            </tr>
+         </tbody>
+   </table>
+
+<!-- a user form -->
+
+<h2>Registration Form</h2>
+
+<form action="submit.php" method="POST">
+    <!-- Name Field -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="5">
+    <br><br>
+
+    <!-- Email Field -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br><br>
+
+    <!-- Password Field -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+    <br><br>
+
+    <!-- Date Field -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <!-- Dropdown (Select Field) -->
+    <label for="country">Select Your Country:</label>
+    <select id="country" name="country" required>
+        <option value="">-- Choose a Country --</option>
+        <option value="USA">United States</option>
+        <option value="UK">United Kingdom</option>
+        <option value="Canada">Canada</option>
+        <option value="Australia">Australia</option>
+    </select>
+    <br><br>
+
+    <!-- Radio Buttons (Gender Selection) -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="Other" required>
+    <label for="other">Other</label>
+    <br><br>
+
+    <!-- Checkboxes (Interests) -->
+    <label>Interests:</label>
+    <input type="checkbox" id="sports" name="interests" value="Sports">
+    <label for="sports">Sports</label>
+
+    <input type="checkbox" id="music" name="interests" value="Music">
+    <label for="music">Music</label>
+
+    <input type="checkbox" id="reading" name="interests" value="Reading">
+    <label for="reading">Reading</label>
+    <br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
